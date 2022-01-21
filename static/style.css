@@ -122,7 +122,7 @@
 
 #sponsorsSection{
     height: 300px;
-    background-color: rgba(206, 23, 23, 0.597);
+    background-color: rgb(39 0 0 / 47%);
 }
 #sponsorsSection h1{
     text-align: center;
@@ -130,11 +130,25 @@
     padding: 10px;
     font-size: 2rem;
 }
-
+.spimg{
+    height: 80%;
+    margin: 0px 40px;
+}
+#sponsors{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin: auto;
+}
 
 
 /*footer*/
 #footer{
-    height: 100px;
-    background-color: blue;
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
 }
