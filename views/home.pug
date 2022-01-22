@@ -1,22 +1,14 @@
-//- index.pug
-//- | This has been replaced with home.pug or template inheritance
-doctype html
-html
-  head
-    title Sumant Dance Academy
-    style
-      include ../static/style.css
-  body
-    nav#navbar
-        ul
-            div#logo 
-                img(src="/static/img/logo.jpg")
-                | SDA
-            li #[a(href="/") Home]
-            li #[a(href="/") About]
-            li #[a(href="/") Services]
-            li #[a(href="/") Class Info]
-            li #[a(href="/") Contact Us]
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+    include ../static/style.css
+
+block content 
+    
     section#introSection
         div#opening Welcome To Sumant's Dance Academy 
         div Eat Sleep Dance Repeat.
@@ -51,14 +43,3 @@ html
             img(src="/static/img/spon2.jpg" alt="Sponsor Image" class="spimg")
             img(src="/static/img/spon3.png" alt="Sponsor Image" class="spimg")
             img(src="/static/img/spon4.jpg" alt="Sponsor Image" class="spimg")
-    footer#footer
-        | Copyright 2021 @SumantChaudhary | All rights Reserved
-    script
-      include ../static/index.js
-
-
-
-
-
-
-//- | This has been replaced with home.pug or template inheritance
